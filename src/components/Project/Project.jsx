@@ -14,19 +14,19 @@ export const Project = () => {
       id: 2,
       image: "/Image_Icon/Image/Mask Group.png",
       title: "Luxury villa in Rego Park",
-      icon: "ImLocation2",
+      icon: <CiLocationOn />,
       location: "Dhaka, Bangladesh",
     },
     {
       id: 3,
       image: "/Image_Icon/Image/Mask Group-1.png",
       title: "Gorgeous house",
-      icon: "ImLocation2",
+      icon: <CiLocationOn />,
       location: "Dhaka, Bangladesh",
     },
   ];
   return (
-    <div className="max-w-[1240px] mx-auto h-screen mt-10">
+    <div className="max-w-[1240px] mx-auto mt-10">
       <div className="text-center">
         <p>Project</p>
         <h3 className="text-[#1F1632] font-bold text-4xl pb-20">
@@ -34,16 +34,16 @@ export const Project = () => {
           Available Today
         </h3>
       </div>
-      <div className="flex justify-around">
+      <div className="p-4 flex gap-6 flex-col md:flex-row">
         {projects.map(({ id, image, title, icon, location }) => (
-          <div key={id} className="w-[350px] h-[450px] text-center">
+          <div key={id} className="text-center w-full">
             <img
-              className="w-[350px] h-[400px] rounded-t"
+              className="h-[400px] w-full object-cover rounded-t"
               src={image}
               alt="project-pic"
             />
             <h4 className="text-[#1F1632] text-xl font-semibold">{title}</h4>
-            <p className="text-sm">
+            <p className="text-sm flex gap-2 items-center justify-center">
               {icon}
               {location}
             </p>

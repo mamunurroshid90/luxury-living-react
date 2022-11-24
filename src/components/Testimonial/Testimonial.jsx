@@ -22,17 +22,17 @@ export const Testimonial = () => {
     },
   ];
   return (
-    <div className="max-w-[1240px] mx-auto w-100% h-screen mt-10 bg-[#F7F7F7]">
+    <div className="container mt-10 bg-[#F7F7F7]">
       <h1 className="pt-28 text-center text-[#1F1632] text-4xl font-bold">
         Testimonial
       </h1>
-      <div className="md:flex justify-around items-center pt-20 mx-auto">
+      <div className="md:flex justify-center items-center pt-20 mx-auto">
         {testimonial.map(({ id, images, name, title }) => (
           <div
             key={id}
-            className="w-[370px] h-[290px] shadow-2xl py-6 px-6 rounded"
+            className="text-center justify-center md:shadow-2xl py-6 px-6 rounded"
           >
-            <div className="flex items-center">
+            <div className="flex justify-center items-center">
               <img className="w-16 h-16" src={images} alt="" />
               <div className="pl-4">
                 <h3 className="text-xl font-bold">{name}</h3>

@@ -22,7 +22,7 @@ export const Service = () => {
     },
   ];
   return (
-    <div className="max-w-[1240px] mx-auto h-screen mt-10 text-center">
+    <div className="container  mt-10 text-center pb-10">
       <div className="text-center">
         <p>Service</p>
         <h1 className="text-4xl font-semibold ">
@@ -30,11 +30,11 @@ export const Service = () => {
           delivers
         </h1>
       </div>
-      <div className="flex justify-center items-center text-center pt-16 ">
+      <div className="md:flex md:gap-8  justify-center items-center text-center pt-16 ">
         {services.map(({ id, images, title, price }) => (
           <div
             key={id}
-            className="w-[400px] h-[300px] hover:shadow-xl rounded-md flex-col w-100%"
+            className=" md:hover:shadow-xl rounded-md flex-col w-100% mt-8"
           >
             <img className="w-20 h-20 mx-auto" src={images} alt="service-pic" />
             <p className="font-semibold text-xl p-2">{title}</p>
@@ -42,7 +42,7 @@ export const Service = () => {
             <p className="">
               Amet minim mollit non deserunt <br /> ullamco est sit aliqua dolor
               do amet <br /> sint. Velit officia consequat duis <br /> enim
-              velit mollit.{" "}
+              velit mollit.
             </p>
           </div>
         ))}

@@ -3,9 +3,9 @@ import { FooterWidget } from "../FooterWidget";
 
 export const About = () => {
   return (
-    <div className="bg-[#251D58] text-white py-10">
-      <div className="flex max-w-[1240px] mx-auto justify-around">
-        <div>
+    <div className="bg-[#251D58] text-white py-10 ">
+      <div className="md:flex  max-w-[1240px] mx-auto justify-around">
+        <div className="mb-4 pl-8">
           <p>H#000 (0th Floor), Road #00,</p>
           <p>New DOHS, Mohakhali, Dhaka, Bangladesh</p>
         </div>
@@ -26,8 +26,8 @@ export const About = () => {
           list={["Rentals", "Sales", "Contact", "Our blog"]}
         />
 
-        <div>
-          <h5>About us</h5>
+        <div className="pl-8">
+          <h5 className="text-2xl font-medium mb-4">About us</h5>
           <p>
             Lorem ipsum dolor sit amet, consectetur <br />
             adipiscing elit. Purus commodo ipsum <br />
